@@ -1,0 +1,64 @@
+.book {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+header {
+  height: 14.5vh;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5)
+    url("https://www.theartnewspaper.ru/media/original_images/ed0d16aa-ca52-4c3a-a588-5a6492f0d668.jpg");
+  background-blend-mode: overlay;
+}
+.cover {
+  width: 30%;
+  margin: 10px 5% 0 0;
+}
+
+.goodImg {
+  width: 100%;
+}
+
+.badImg {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.text {
+  width: 50%;
+}
+
+h3,
+h4 {
+  margin: 10px 0;
+}
+
+div,
+h3 {
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 1023px) {
+  .book {
+    flex-direction: column;
+  }
+  .text {
+    width: 90%;
+  }
+  .cover {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    width: 90%;
+  }
+  header {
+    height: 0;
+  }
+}
